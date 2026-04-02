@@ -1,0 +1,83 @@
+:root {
+    --bg-color: #1a1a2e;
+    --panel-color: #16213e;
+    --accent-color: #0f3460;
+    --text-color: #e94560;
+    --elevator-color: #4ecca3;
+    --door-color: #2c3e50;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 120px 220px 320px;
+    gap: 30px;
+}
+
+.shaft {
+    height: 420px;
+    width: 90px;
+    background: #0f3460;
+    border: 4px solid #533483;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* The Elevator Car */
+.car {
+    width: 100%;
+    height: 65px;
+    background: var(--elevator-color);
+    position: absolute;
+    bottom: 5px;
+    transition: transform 1.5s cubic-bezier(0.42, 0, 0.58, 1); 
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* The Doors */
+.door {
+    width: 50%;
+    height: 100%;
+    background: var(--door-color);
+    border: 0.5px solid #1a1a2e;
+    transition: width 1s ease-in-out; /* Door speed */
+}
+
+/* State: Open Doors */
+.car.open .door {
+    width: 0%;
+}
+
+.controls button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 4px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.controls button:hover { background: var(--text-color); }
+
+.debug-panel {
+    background: var(--panel-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+}
