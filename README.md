@@ -1,6 +1,17 @@
+
+## Group Members
+
+| Name                 | Registration Number   |
+|----------------------|-----------------------|
+ George Kareko         | BSCCS/2025/39770      |
+| Collins Brian        | BSCCS/2025/40048      |
+| Elias Muchira Karimi | BSCCS/2025/40695      | 
+| Brian Chege          | BSCCS/2025/45559      | 
+| Ian Wanyama          | BSCCS/2025/39198      | 
+
 # 🏢 IoT Elevator Control System (Prototype)
 
-A full-stack simulation of a 4-floor elevator system utilizing a **First-In, First-Out (FIFO)** scheduling algorithm. This project demonstrates the integration of a Python/Flask backend with a modern, responsive JavaScript frontend.
+A fbeull-stack simulation of a 4-floor elevator system utilizing a **First-In, First-Out (FIFO)** scheduling algorithm. This project demonstrates the integration of a Python/Flask backend with a modern, responsive JavaScript frontend.
 
 ---
 
