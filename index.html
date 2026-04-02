@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Elevator Pro: Doors & FIFO</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="shaft">
+            <div id="elevator" class="car">
+                <div class="door"></div>
+                <div class="door"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <h3>Floor Panel</h3>
+            <button onclick="requestFloor(4)">4</button>
+            <button onclick="requestFloor(3)">3</button>
+            <button onclick="requestFloor(2)">2</button>
+            <button onclick="requestFloor(1)">1</button>
+            <button onclick="requestFloor(0)">G</button>
+        </div>
+
+        <div class="debug-panel">
+            <h3>System Monitor</h3>
+            <div id="queue-display">Queue: []</div>
+            <hr style="border: 0.5px solid #0f3460; margin: 15px 0;">
+            <div id="log-display">Initializing...</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
